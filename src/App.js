@@ -15,6 +15,7 @@ function App() {
    
    <BrowserRouter>
       <Routes>
+        <Route path="/" element={<LoginPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashBoard />} />
         <Route path="/tasks/:id" element={<EditTaskPage />} />
