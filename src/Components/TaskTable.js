@@ -86,15 +86,17 @@ const TaskTable = () => {
               <Button
                   variant="outlined"
                   color="primary"
+                  size="small"
                   onClick={() => navigate(`/tasks/${task._id}`)}
-                  style={{ marginRight: '8px' }}
+                  style={{ marginRight: '8px',marginBottom:'10px' }}
                 >
                   Edit
                 </Button>
                 <Button
                   variant="contained"
+                  size="small"
                   color="secondary"
-                  sx={{ backgroundColor: '#1e2772', color: '#fff' }}
+                  sx={{ backgroundColor: '#1e2772', color: '#fff',marginBottom:'10px' }}
                   onClick={() => deleteTaskMutation.mutate(task._id)}
                 >
                   Delete
